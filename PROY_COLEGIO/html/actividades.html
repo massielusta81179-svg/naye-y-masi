@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Actividades - Colegio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg, #e8f5e9, #e3f2fd);
+}
+
+/* HEADER */
+.header{
+    background: linear-gradient(90deg, #0b5d1e, #1e88e5);
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* TITULO */
+.titulo{
+    text-align:center;
+    margin:20px;
+    color:#0b5d1e;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#1e88e5;
+    margin:10px 0;
+}
+
+.card p{
+    font-size:14px;
+    color:#333;
+}
+
+/* SECCION RECUERDOS */
+.recuerdos .recuerdo-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+    text-align:center;
+}
+
+.recuerdos .recuerdo-card:hover{
+    transform:scale(1.05);
+}
+
+.recuerdos .recuerdo-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.recuerdos .recuerdo-card h4{
+    color:#0b5d1e;
+    margin:10px 0 5px 0;
+}
+
+.recuerdos .recuerdo-card p{
+    font-size:14px;
+    padding:0 10px 15px;
+    color:#333;
+}
+.btn-volver{
+    width:100%;
+    padding:12px;
+    border-radius:25px;
+    border:2px solid #1e88e5;
+    background:white;
+    color:#1e88e5;
+    font-weight:bold;
+    transition:0.3s;
+}
+.btn-volver:hover{
+    background:#1e88e5;
+    color:white;
+}
+footer {
+    background:  #0b5d1e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    U.E. La Primera Fe y Alegría - ACTIVIDADES
+</div>
+
+<h2 class="titulo"> Actividades del Colegio</h2>
+
+<div class="contenedor">
+
+    <div class="card">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\DES.jpg">
+        <h3>Desfile Escolar</h3>
+        <p>Participación de estudiantes en actos cívicos y desfiles patrióticos.</p>
+    </div>
+
+    <div class="card">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\FE.jpg">
+        <h3>Ferias Educativas</h3>
+        <p>Exposición de proyectos científicos, tecnológicos y culturales.</p>
+    </div>
+
+    <div class="card">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\DE.jpg">
+        <h3>Deportes</h3>
+        <p>Fútbol, básquet y competencias internas para fortalecer el trabajo en equipo.</p>
+    </div>
+
+</div>
+
+<h2 class="titulo"> Recuerdos del Colegio</h2>
+
+<div class="contenedor recuerdos">
+
+    <div class="recuerdo-card">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\NUÑO.jpg" alt="Día del Estudiante">
+        <h4>Día del Niño</h4>
+        <p>Momentos de alegría, juegos y convivencia entre compañeros.</p>
+    </div>
+
+    <div class="recuerdo-card">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\AC.jpg" alt="Actos Cívicos">
+        <h4> Actos Cívicos</h4>
+        <p>Izamiento de la bandera y respeto a nuestros símbolos patrios.</p>
+    </div>
+
+    <div class="recuerdo-card">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\D.jpg" alt="Actividades Culturales">
+        <h4> Actividades Culturales</h4>
+        <p>Danzas, música y presentaciones que reflejan nuestra identidad.</p>
+    </div>
+<a href="c:\Users\ASUS\Desktop\PROY_COLEGIO\html\principal.html">
+    <button type="button" class="btn-volver">⬅ Volver al inicio</button>
+</a>
+</div>
+
+<footer>
+    © 2026 U.E. La Primera Fe y Alegría - Todos los derechos reservados
+</footer>
+
+</body>
+</html>

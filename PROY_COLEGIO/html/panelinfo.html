@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel Informativo</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: #f4f8f7;
+}
+
+/* HEADER */
+.header{
+    background: linear-gradient(90deg, #0b5d1e, #1e88e5);
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+.header h1{
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+.header p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* SECCIONES */
+.section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+/* TARJETA GRANDE */
+.block{
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    overflow:hidden;
+    display:flex;
+    max-width:900px;
+    width:100%;
+}
+
+/* IMAGEN */
+.block img{
+    width:40%;
+    object-fit:cover;
+}
+
+/* TEXTO */
+.text{
+    padding:20px;
+    width:60%;
+}
+
+.text h2{
+    color:#0b5d1e;
+    margin-bottom:10px;
+}
+
+.text p{
+    color:#333;
+    line-height:1.6;
+}
+
+/* BADGE */
+.badge{
+    display:inline-block;
+    padding:5px 10px;
+    background:#1e88e5;
+    color:white;
+    font-size:12px;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+.btn-volver{
+    width:100%;
+    padding:12px;
+    border-radius:25px;
+    border:2px solid #1e88e5;
+    background:white;
+    color:#1e88e5;
+    font-weight:bold;
+    transition:0.3s;
+}
+.btn-volver:hover{
+    background:#1e88e5;
+    color:white;
+}
+/* FOOTER */
+footer {
+    background:  #0b5d1e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+/* RESPONSIVE */
+@media(max-width:800px){
+    .block{
+        flex-direction:column;
+    }
+
+    .block img,
+    .text{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1> U.E. La Primera Fe y Alegría</h1>
+    <p>Panel informativo institucional</p>
+</div>
+
+<!-- HORARIO -->
+<div class="section">
+    <div class="block">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\h.jpg">
+        <div class="text">
+            <span class="badge"> Horario Escolar</span>
+            <h2>Organización de clases</h2>
+            <p>
+                El horario escolar está estructurado para garantizar un aprendizaje ordenado y eficiente.<br><br>
+                 Entrada Invernal tuno mañana : 08:45 AM<br>
+                 Salida turno mañana: 12:20 PM - 13:00 PM - 13:40 PM<br>
+                 Entrada turno tarde: 14:00 Pm <br>
+                 Salida turno tarde: 17:15 PM <br>
+                 Lunes a viernes<br><br>
+                Se recomienda puntualidad para un mejor rendimiento académico.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- ANUNCIOS -->
+<div class="section">
+    <div class="block">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\c.jpg">
+        <div class="text">
+            <span class="badge">Información Importante</span>
+            <h2>Comunicados del colegio</h2>
+            <p>
+                El colegio informa a toda la comunidad educativa:<br><br>
+                • Feria educativa esta semana <br>
+                • Reunión de padres obligatoria  <br>
+                • Actividades deportivas en preparación <br><br>
+                Mantente atento a los comunicados oficiales.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- VESTIMENTA -->
+<div class="section">
+    <div class="block">
+        <img src="c:\Users\ASUS\Desktop\PROY_COLEGIO\img\u.jpg">
+        <div class="text">
+            <span class="badge"> Vestimenta</span>
+            <h2>Uniforme institucional</h2>
+            <p>
+                El uso del uniforme es obligatorio dentro de la institución:<br><br>
+                 Camisa blanca<br>
+                 Chompa verde<br>
+                 Corbata ploma<br>
+                 Pantalón o falda plomo <br>
+                 Zapatos negros<br><br>
+                Representa identidad, orden y disciplina escolar.
+            </p>
+        </div>
+    </div>
+<a href="c:\Users\ASUS\Desktop\PROY_COLEGIO\html\principal.html">
+    <button type="button" class="btn-volver">⬅ Volver al inicio</button>
+</a>
+</div>
+
+<footer>
+© 2026 U.E. La Primera Fe y Alegría - Todos los derechos reservados
+</footer>
+
+</body>
+</html>

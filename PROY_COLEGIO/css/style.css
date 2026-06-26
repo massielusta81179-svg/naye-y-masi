@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* IMAGEN */
+.fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OSCURECER IMAGEN */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+/* TEXTO */
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* TÍTULO */
+.contenido h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.verde { color: #00ff99; }
+.azul { color: #00c3ff; }
+.rojo { color: #ff4d4d; }
+
+/* FRASE */
+.frase {
+    font-size: 30px;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* AUTOR */
+.autor {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 35px;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}

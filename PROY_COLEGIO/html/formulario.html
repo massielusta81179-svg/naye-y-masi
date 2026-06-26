@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de Consulta</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg, #e8f5e9, #e3f2fd);
+}
+
+/* HEADER */
+.header{
+    background: linear-gradient(90deg, #0b5d1e, #1e88e5);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.header h1{
+    font-size:22px;
+}
+
+/* CONTENEDOR */
+.container{
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+/* FORM */
+form{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    width:100%;
+    max-width:600px;
+}
+
+/* TITULO */
+form h2{
+    color:#0b5d1e;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+/* INPUTS */
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+/* BOTON */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0b5d1e;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#1e88e5;
+}
+.btn-volver{
+    width:100%;
+    padding:12px;
+    border-radius:25px;
+    border:2px solid #1e88e5;
+    background:white;
+    color:#1e88e5;
+    font-weight:bold;
+    transition:0.3s;
+}
+.btn-volver:hover{
+    background:#1e88e5;
+    color:white;
+}
+
+/* MENSAJE */
+.mensaje{
+    display:none;
+    margin-top:15px;
+    padding:10px;
+    background:#e8f5e9;
+    border-left:5px solid #0b5d1e;
+    color:#333;
+}
+
+/* FOOTER */
+footer {
+    background:  #0b5d1e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1> U.E. La Primera Fe y Alegría</h1>
+    <p>Formulario de consulta para padres de familia</p>
+</div>
+
+<div class="container">
+
+<form onsubmit="enviar(event)">
+
+    <h2> Consultar situación del estudiante</h2>
+
+    <input type="text" placeholder="Nombre del padre/madre" required>
+
+    <input type="text" placeholder="Nombre del estudiante" required>
+
+    <select required>
+        <option value="">Curso del estudiante</option>
+        <option>1ro de Secundaria</option>
+        <option>2do de Secundaria</option>
+        <option>3ro de Secundaria</option>
+        <option>4to de Secundaria</option>
+        <option>5to de Secundaria</option>
+        <option>6to de Secundaria</option>
+    </select>
+
+    <input type="text" placeholder="Nombre del profesor" required>
+
+    <textarea placeholder="Escriba su consulta sobre el rendimiento, conducta o situación del estudiante..." required></textarea>
+
+    <button type="submit">ENVIAR CONSULTA</button>
+
+    <div class="mensaje" id="mensaje">
+        Su consulta fue enviada correctamente al profesor. Se responderá pronto.
+    </div>
+   <a href="c:\Users\ASUS\Desktop\PROY_COLEGIO\html\principal.html">
+    <button type="button" class="btn-volver">⬅ Volver al inicio</button>
+</a>
+</form>
+
+</div>
+
+<footer>
+© 2026 U.E. La Primera Fe y Alegría - Todos los derechos reservados
+</footer>
+
+<script>
+function enviar(event){
+    event.preventDefault();
+    document.getElementById("mensaje").style.display = "block";
+}
+</script>
+
+</body>
+</html>
